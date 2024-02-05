@@ -1,0 +1,214 @@
+body{
+    background: linear-gradient(to right, #273036, #1c1f25);
+}
+header{
+    background-color: rgb(148, 120, 120);
+}
+footer{
+    background-color: rgb(148, 120, 120);
+}
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #273036, #1c1f25);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color:black;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px rgba(255, 9, 9, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border-style: double;
+}
+
+.container:hover {
+    transform: scale(1.30);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #3498db;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.task-input {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskCounter {
+    font-size: 1.2em;
+    color: #2ecc71;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease-in-out;
+    color:black;
+}
+
+li:hover {
+    background-color: #d5d8dc;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color:rosybrown;
+}
+
+#taskInput,
+#prioritySelect,
+#dueDateInput {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.due-date {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.clear-all {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.clear-all:hover {
+    background-color: #c0392b;
+}
+
+.scheduler {
+    height: 380px;
+    width:600px;
+    padding: 20px;
+    margin-left: 50px;
+    background-color:black;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px rgba(255, 9, 9, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border-style: double;
+}
+
+.scheduler:hover {
+    transform: scale(1.32);
+}
+
+.scheduler h2 {
+    font-size: 2em;
+    color: #3498db;
+}
+
+.scheduler-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#eventDescription,
+#startTime,
+#endTime {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#eventList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.event-item:hover {
+    background-color: #d5d8dc;
+}
+
+.remove-event {
+    cursor: pointer;
+    color: #e74c3c;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.remove-event:hover {
+    color: #c0392b;
+}
+marquee{
+    font-size: 30px;
+    color: #3fbdb6;
+}
+

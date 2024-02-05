@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Your Ultimate ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 align="center">Your Productivity Hub</h1>
+    <p align="center">TaskMaster - Your Ultimate ToDo List and Day Scheduler</p>
+    </header>
+    <br>
+    <marquee>-> Never get late anymore.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+    <marquee>-> Arrange your    schedule properly.</marquee>
+    <marquee>-> We came to arrange your life&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+    <div class="body">
+    <div class="container">
+        <div class="header">
+            <h1>TaskMaster</h1>
+            <p>Your Ultimate ToDo List and Day Scheduler</p>
+        </div>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="datetime-local" id="dueDateInput">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="options">
+            <p id="taskCounter">0 tasks</p>
+            <button onclick="clearAllTasks()">Clear All Tasks</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <div class="scheduler">
+        <h2>Day Scheduler</h2>
+        <div class="scheduler-input">
+            <input type="text" id="eventDescription" placeholder="Event description">
+            <input type="time" id="startTime">
+            <input type="time" id="endTime">
+            <button onclick="addEvent()">Add Event</button>
+        </div>
+        <ul id="eventList"></ul>
+    </div><br>
+</div>
+<footer >
+    <h2 align="center">&copy; YATIN | TaskMaster 2024. All rights reserved.</h2>
+</footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
